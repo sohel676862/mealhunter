@@ -104,7 +104,24 @@ const moreinformation = allfood => {
     <div class="strCategory">
     <p>${allfood.strIngredient2}</p>
     </div>
-     
+    <div class="strCategory">
+    <p>${allfood.strIngredient3}</p>
+    </div>
+    <div class="strCategory">
+    <p>${allfood.strIngredient4}</p>
+    </div>
+    <div class="strCategory">
+    <p>${allfood.strIngredient5}</p>
+    </div>
+    <div class="strCategory">
+    <p>${allfood.strIngredient6}</p>
+    </div>
+    <div class="strCategory">
+    <p>${allfood.strIngredient7}</p>
+    </div>
+    <div class="strCategory">
+    <p>${allfood.strIngredient8}</p>
+    </div>
    
     <div class="strCategory">
     <p>${allfood.strInstructions}</p>
