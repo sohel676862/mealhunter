@@ -37,13 +37,14 @@ const grtalldata = findfood => {
     resultHeading.innerHTML = ""
 
     if (findfood.meals == null) {
-        const error = document.getElementById('error')
+        let error = document.getElementById('error')
         error.innerHTML = ` <h2>food is not find</h2>`
-    }
-    findfood.meals.forEach(element => {
-        const div = document.createElement('div')
-        div.className = "radies"
-        const foodinfo = `
+    } else {
+        findfood.meals.forEach(element => {
+            error.innerHTML = ""
+            const div = document.createElement('div')
+            div.className = "radies"
+            const foodinfo = `
         <div onclick="getfullinformation(${element.idMeal})">
         <div class="foodname" data-mealID="${element.idMeal}>
         <h1 class="food_info" >${element.strMeal}</h1>
@@ -60,13 +61,14 @@ const grtalldata = findfood => {
               `
 
 
-        div.innerHTML = foodinfo
-        resultHeading.appendChild(div)
+            div.innerHTML = foodinfo
+            resultHeading.appendChild(div)
 
-    });
+        });
 
 
 
+    }
 
 
 
